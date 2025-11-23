@@ -2,6 +2,7 @@
 Reversed from guy2-macros.com, this code is buns but atleast he didnt add malware
 
 ## Tools used:
+- https://github.com/NationalSecurityAgency/ghidra
 - https://pyinstxtractor-web.netlify.app/
 - https://pylingual.io/
 

@@ -1,5 +1,5 @@
 # BGSI-Macros
-Reversed from guy2-macros.com, this code is buns but atleast he didnt add malware
+Reversed from guy2-macros.com, this code is questionable but atleast he didnt add malware
 
 ## Tools used:
 - https://github.com/NationalSecurityAgency/ghidra

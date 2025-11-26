@@ -1,4 +1,4 @@
-# BGSI-Macros
+# BGSI-Macros-Guy2
 Reversed from guy2-macros.com
 
 ## Tools used:

@@ -115,73 +115,11 @@ def fetch_and_decrypt_scripts(entries: List[str], base_url: str = "https://guy2-
 
 
 if __name__ == "__main__":
-    scripts = [
-      "Dart v8.3.py|Pops balloons in the Dart minigame|member|BGSI",
-      "BoardGame v8.1.py|Plays the Board Game minigame and gets inf elixirs|member|BGSI",
-      "FastHatch v8.1.py|Faster egg hatching and hatched eggs counter|member|BGSI",
-      "Dart v10.1.py|Pops balloons in the Dart minigame|member|BGSI",
-      "BoardGame v10.1.py|Plays the Board Game minigame and gets inf elixirs|member|BGSI",
-      "Dart v11.1.py|Pops balloons in the Dart minigame|member|BGSI",
-      "Dart v12.1.py|Pops balloons in the Dart minigame|member|BGSI",
-      "BoardGame v12.1.py|Plays the Board Game minigame and gets inf elixirs|member|BGSI",
-      "PetMatch v12.1.py|Plays the Pet Match minigame|member|BGSI",
-      "PetMatch v12.2.py|Plays the Pet Match minigame|member|BGSI",
-      "Dart v12.2.py|Pops balloons in the Dart minigame|member|BGSI",
-      "TeamEnchant v12.1.py|Enchants your whole team to a specific enchant|member|BGSI",
-      "TeamEnchant v13.1.py|Enchants your whole team to a specific enchant|member|BGSI",
-      "FastHatch v13.1.py|Faster egg hatching and hatched eggs counter|member|BGSI",
-      "BoardGame v13.1.py|Plays the Board Game minigame and gets inf elixirs|member|BGSI",
-      "Dart v13.1.py|Pops balloons in the Dart minigame|member|BGSI",
-      "PetMatch v13.1.py|Plays the Pet Match minigame|member|BGSI",
-      "TeamEnchant v13.2.py|Enchants your whole team to a specific enchant|member|BGSI",
-      "Dart v13.2.py|Pops balloons in the Dart minigame|member|BGSI",
-      "BasicComp v14.1.py|Plays the competetive thing idk|member|BGSI",
-      "BoardGame v14.1.py|Plays the Board Game minigame and gets inf elixirs|member|BGSI",
-      "BasicComp v14.2.py|Plays the competetive thing idk|member|BGSI",
-      "BasicComp v14.3.py|Plays the competetive thing idk|member|BGSI",
-      "BasicComp v14.4.py|Plays the competetive thing idk|member|BGSI",
-      "BasicComp v14.5.py|Plays the competetive thing idk|member|BGSI",
-      "AutoFish v15.1.py|Fishes fish in fishing simulator infinity (bgsi)|member|BGSI",
-      "QuestBoard v15.1.py|Automatically does the fishing board quests|member|BGSI",
-      "QuestBoard v15.2.py|Automatically does the fishing board quests|member|BGSI",
-      "PetMatch v15.1.py|Plays the Pet Match minigame|member|BGSI",
-      "AutoFish v15.2.py|Fishes fish in fishing simulator infinity (bgsi)|member|BGSI",
-      "BoardGame v15.1.py|Plays the Board Game minigame and gets inf elixirs|member|BGSI",
-      "QuestBoard v15.3.py|Automatically does the fishing board quests|member|BGSI",
-      "FastHatch v15.1.py|Faster egg hatching and hatched eggs counter|member|BGSI",
-      "AutoFish v15.3.py|Fishes fish in fishing simulator infinity (bgsi)|member|BGSI",
-      "QuestBoard v15.4.py|Automatically does the fishing board quests|member|BGSI",
-      "TeamEnchant v16.1.py|Enchants your whole team to a specific enchant|member|BGSI",
-      "Dart v16.1.py|NUKES all the balloons in the dart minigame|member|BGSI",
-      "QuestBoard v16.1.py|Automatically does the fishing board quests|member|BGSI",
-      "Dart v16.2.py|NUKES all the balloons in the dart minigame|member|BGSI",
-      "QuestBoard v17.1.py|Automatically does the fishing board quests|member|BGSI",
-      "AutoFish v17.1.py|Fishes fish in fishing simulator infinity (bgsi)|member|BGSI",
-      "FastBox v17.1.py|Opens mystery boxes 12.5% faster than auto open|member|BGSI",
-      "FastBox v17.2.py|Opens mystery boxes 25% faster than auto open|member|BGSI",
-      "Dart v17.1.py|NUKES all the balloons in the dart minigame|member|BGSI",
-      "Auto Obby v21.1.py|Auto completes easy, medium and hard obbies|donator|BGSI",
-      "BoardGame v22.1.py|Plays the Board Game minigame and gets inf elixirs|member|BGSI",
-      "Dart v22.1.py|NUKES all the balloons in the dart minigame|member|BGSI",
-      "BoardGame v22.2.py|Plays the Board Game minigame and gets inf elixirs|member|BGSI",
-      "AutoMaze v23.1.py|Completes the Maze Minigame|giveaway_sponsor|BGSI",
-      "AutoMaze v23.2.py|Completes the Maze Minigame|giveaway_sponsor|BGSI",
-      "AutoMaze v23.3.py|Completes the Maze Minigame|member|BGSI",
-      "FastComp v24.1.py|Fast competetive macro (130 or less ping required)|donator|BGSI",
-      "FastComp v24.2.py|Fast competetive macro (130 or less ping required)|donator|BGSI",
-      "FastComp v24.3.py|Fast competetive macro (130 or less ping required)|donator|BGSI",
-      "TeamEnchant v24.1.py|Enchants your whole team to a specific enchant|member|BGSI",
-      "Trick Or Treat v25.1.py|Automatic trick-or-treating during halloween event|member|BGSI",
-      "FastBox v27.1.py|Opens mystery boxes faster than auto open|member|BGSI",
-      "BoardGame v27.1.py|Plays the Board Game minigame and gets inf elixirs|member|BGSI",
-      "Trick Or Treat v27.1.py|Automatic trick-or-treating during halloween event|member|BGSI",
-      "Auto Obby v27.1.py|Auto completes easy, medium and hard obbies|donator|BGSI",
-      "TeamEnchant v28.1.py|Enchants your whole team to a specific enchant|member|BGSI",
-      "WinRes v1.1.py|QoL window alignment and resizing|member|BGSI",
-      "FastHatch v28.1.py|Faster egg hatching and egg counter with secret detection|member|BGSI",
-      "FastHatch v28.2.py|Faster egg hatching and egg counter with secret detection|member|BGSI",
-      "FastHatch v29.1.py|Faster egg hatching and egg counter with secret detection|member|BGSI"
-    ]
+    url = "https://guy2-macros.com/scripts/macros.json"
+
+    with urllib.request.urlopen(url) as response:
+        data = response.read()
+        scripts = json.loads(data.decode('utf-8'))
 
     # fetch newest only and decrypt into ./downloaded_scripts/
     fetch_and_decrypt_scripts(scripts, base_url="https://guy2-macros.com/scripts/", out_dir="downloaded_scripts")
